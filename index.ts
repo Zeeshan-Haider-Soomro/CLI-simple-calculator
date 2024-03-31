@@ -1,3 +1,5 @@
+#! /usr/bin/env node 
+
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
@@ -10,7 +12,7 @@ const answer = await inquirer.prompt([
     choices: ["Addition", "Subtraction", "multiplication", "division"],
   },
 ]);
-// console.log(answer);
+
 
 if (answer.operator === "Additione") {
     console.log(answer.firstNumber + answer.secondNumber);
